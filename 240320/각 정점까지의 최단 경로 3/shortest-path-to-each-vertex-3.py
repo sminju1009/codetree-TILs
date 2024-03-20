@@ -34,4 +34,4 @@ dijkstra()
 
 
 for r in result[2:]:
-    print(r) if r!= INF else -1
+    print(r if r!= INF else -1)
