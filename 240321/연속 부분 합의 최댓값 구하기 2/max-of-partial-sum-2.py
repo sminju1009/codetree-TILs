@@ -1,11 +1,10 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-# 원소가 최대일 때 구하기
-sum_arr = 0
-for i in range(n):
-    sum_arr += arr[i]
-    if sum_arr<0:
-        sum_arr = arr[i]
+dp = [0] * n
+dp[0] = arr[0]
 
-print(sum_arr)
+for i in range(1, n):
+    dp[i] = max(dp[i-1]+arr[i], arr[i])
+
+print(max(dp))
