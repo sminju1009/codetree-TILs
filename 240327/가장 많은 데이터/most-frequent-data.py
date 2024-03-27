@@ -10,6 +10,6 @@ for _ in range(n):
 maxi = 0
 for i, elem in enumerate(dic):
     if maxi<i:
-        maxi = i+1
+        maxi = i
 
-print(maxi)
+print(maxi+1)
