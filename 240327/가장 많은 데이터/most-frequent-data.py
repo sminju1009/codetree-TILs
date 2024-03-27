@@ -8,8 +8,8 @@ for _ in range(n):
         dic[a] += 1
 
 maxi = 0
-for i, elem in enumerate(dic):
-    if maxi<i:
-        maxi = i
+for key, value in dic.items():
+    if dic[key]>maxi:
+        maxi = dic[key]
 
-print(maxi+1)
+print(maxi)
