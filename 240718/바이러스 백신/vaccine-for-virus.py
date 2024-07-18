@@ -46,7 +46,4 @@ for i in range(n):
         if visited[i][j]>ans:
             ans = visited[i][j]
 
-if ans!=-1:
-    print(ans-1)
-else:
-    print(-1)
+print(ans)
